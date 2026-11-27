@@ -1,0 +1,174 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+.verify-page{
+  min-height:100vh;
+  display:flex;
+  background:#f5f7fb;
+}
+
+/* LEFT SIDE */
+
+.verify-banner{
+  flex:1;
+  background:linear-gradient(
+      135deg,
+      #6a11cb,
+      #2575fc
+  );
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+.banner-overlay{
+  text-align:center;
+  padding:40px;
+  max-width:500px;
+}
+
+.banner-overlay h1{
+  font-size:50px;
+  margin-bottom:15px;
+}
+
+.banner-overlay h2{
+  font-size:34px;
+  margin-bottom:15px;
+}
+
+.banner-overlay p{
+  font-size:18px;
+  line-height:1.6;
+}
+
+.banner-overlay img{
+  width:280px;
+  margin:30px 0;
+}
+
+.verify-features{
+  margin-top:20px;
+}
+
+.verify-features p{
+  margin:10px 0;
+  font-size:18px;
+}
+
+/* RIGHT SIDE */
+
+.verify-card{
+  width:450px;
+  background:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:40px;
+  box-shadow:
+      -5px 0 25px rgba(0,0,0,0.15);
+}
+
+.otp-icon{
+  font-size:60px;
+  text-align:center;
+  margin-bottom:15px;
+}
+
+.verify-card h2{
+  text-align:center;
+  color:#333;
+}
+
+.subtitle{
+  text-align:center;
+  color:#666;
+  margin:15px 0 30px;
+  line-height:1.6;
+}
+
+.verify-card input{
+  width:100%;
+  padding:15px;
+  border:1px solid #ddd;
+  border-radius:12px;
+  margin-bottom:20px;
+  font-size:16px;
+}
+
+.verify-card input:focus{
+  outline:none;
+  border-color:#6a11cb;
+}
+
+.verify-btn{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(
+      135deg,
+      #6a11cb,
+      #2575fc
+  );
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.verify-btn:hover{
+  transform:translateY(-3px);
+}
+
+.security-note{
+  margin-top:20px;
+  text-align:center;
+  background:#eef3ff;
+  padding:12px;
+  border-radius:10px;
+  color:#6a11cb;
+}
+
+.back-link{
+  margin-top:20px;
+  text-align:center;
+  text-decoration:none;
+  color:#6a11cb;
+  font-weight:600;
+}
+
+.error-box{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:24px;
+  color:red;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .verify-page{
+    flex-direction:column;
+  }
+
+  .verify-banner{
+    min-height:300px;
+  }
+
+  .verify-card{
+    width:100%;
+  }
+
+  .banner-overlay img{
+    width:180px;
+  }
+}

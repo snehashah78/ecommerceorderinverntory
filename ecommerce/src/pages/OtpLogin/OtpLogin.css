@@ -1,0 +1,164 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+.otp-page{
+  min-height:100vh;
+  display:flex;
+  background:#f5f7fb;
+}
+
+/* LEFT */
+
+.otp-banner{
+  flex:1;
+  background:
+  linear-gradient(
+    135deg,
+    #6a11cb,
+    #2575fc
+  );
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+.overlay{
+  text-align:center;
+  padding:40px;
+}
+
+.overlay h1{
+  font-size:48px;
+  margin-bottom:10px;
+}
+
+.overlay h2{
+  font-size:34px;
+  margin-bottom:15px;
+}
+
+.overlay p{
+  font-size:18px;
+}
+
+.overlay img{
+  width:280px;
+  margin:30px 0;
+}
+
+.features{
+  margin-top:20px;
+}
+
+.features p{
+  margin:10px 0;
+  font-size:18px;
+}
+
+/* RIGHT */
+
+.otp-card{
+  width:450px;
+  background:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:40px;
+  box-shadow:
+  -5px 0px 25px rgba(0,0,0,0.15);
+}
+
+.otp-card h2{
+  text-align:center;
+  color:#333;
+  margin-bottom:10px;
+}
+
+.subtitle{
+  text-align:center;
+  color:gray;
+  margin-bottom:25px;
+}
+
+.otp-card input{
+  width:100%;
+  padding:14px;
+  margin-bottom:15px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:15px;
+}
+
+.otp-card input:focus{
+  outline:none;
+  border-color:#6a11cb;
+}
+
+.send-btn,
+.verify-btn{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:10px;
+  color:white;
+  cursor:pointer;
+  margin-bottom:15px;
+  font-size:16px;
+  transition:.3s;
+}
+
+.send-btn{
+  background:#2575fc;
+}
+
+.verify-btn{
+  background:#6a11cb;
+}
+
+.send-btn:hover,
+.verify-btn:hover{
+  transform:translateY(-2px);
+}
+
+.secure-box{
+  background:#f2f4ff;
+  color:#6a11cb;
+  text-align:center;
+  padding:12px;
+  border-radius:10px;
+  margin-top:10px;
+}
+
+.back-link{
+  text-align:center;
+  margin-top:20px;
+  text-decoration:none;
+  color:#6a11cb;
+  font-weight:600;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .otp-page{
+    flex-direction:column;
+  }
+
+  .otp-banner{
+    min-height:300px;
+  }
+
+  .otp-card{
+    width:100%;
+  }
+
+  .overlay img{
+    width:180px;
+  }
+}
